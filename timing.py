@@ -1,8 +1,6 @@
-# import the time module 
 import time
+from easygui import integerbox
 
-
-# define the countdown func.
 def countdown(t):
     while t:
         mins, secs = divmod(t, 60)
@@ -13,9 +11,22 @@ def countdown(t):
 
     print('Time is up!!')
 
-
-# input time in seconds 
+# input time in seconds
 # t = 60
 
-# function call 
+# function call
 # countdown(int(t))
+
+def usertimeinput():
+    value = integerbox("Please enter time in minutes to save butt:", "Timer length", None, 1, 25)
+    value = value * 60  # change to seconds for cpuntdown function
+    return value
+
+    #while True:
+    #     try:
+    #        value = integerbox("Please enter time in minutes to save butt:", "Timer length", None, 1, 25)
+    #        #value = int(input("Please enter time in minutes to save butt:\n"))
+    #        value = value * 60
+    #       break
+    #     except:
+    #        print("That's not a valid option!")
