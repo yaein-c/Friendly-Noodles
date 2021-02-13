@@ -4,12 +4,10 @@ from mayhem import websiteopener, popupopener
 from viewer import usertimeinput, setanothertimer, endofsession
 
 #countdown(usertimeinput()) this is for the timing.py use
-
-
-submit()
-websiteopener()
-popupopener()
-print("End check")
+#submit()
+#websiteopener()
+#popupopener()
+#print("End check")
 
 
 # this will be the main loop of program
@@ -17,9 +15,8 @@ while True:
     submit()
     websiteopener()
     popupopener()
-    print("End check")
 
-    if (setanothertimer()==False):
+    if setanothertimer()==False:
         break
 
 endofsession()

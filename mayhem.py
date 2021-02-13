@@ -24,4 +24,5 @@ def popupopener():
     msgbox("Your butt is sore", title="Declaration")
     msgbox("We are trying to help you", title="Peacefulness")
     msgbox("Thank you for saving your butt it means a lot", title="Happiness noises")
+    time.sleep(10)
 
