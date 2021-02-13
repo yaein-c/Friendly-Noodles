@@ -1,4 +1,4 @@
-from easygui import integerbox
+from easygui import integerbox, ynbox, msgbox
 
 def usertimeinput():
     value = integerbox("Please enter time in minutes to save butt:", "Timer length", None, 1, 25)
@@ -13,3 +13,11 @@ def usertimeinput():
     #       break
     #     except:
     #        print("That's not a valid option!")
+
+def setanothertimer():
+    input = ynbox("Do you want to set another timer", "Restart")
+    return input
+
+def endofsession():
+    message = msgbox("We hope that your butt is good now", "BUTT SAVED")
+    return message

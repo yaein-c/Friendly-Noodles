@@ -1,8 +1,6 @@
-#import webbrowser
 from webbrowser import open
 from easygui import msgbox
 import time
-import easygui
 
 
 def websiteopener():
