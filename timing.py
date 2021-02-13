@@ -15,7 +15,7 @@ def countdown(t):
 
 
 # input time in seconds 
-t = 60
+# t = 60
 
 # function call 
-countdown(int(t)) 
+# countdown(int(t))

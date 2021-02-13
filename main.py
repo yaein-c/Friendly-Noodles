@@ -1,5 +1,6 @@
-from timing.py import countdown
-from mayhem.py import websiteOpener
+from timing import countdown
+from mayhem import websiteopener
 
-websiteOpener
-countdown
+countdown(10)
+websiteopener()
+print("Shocked??")
