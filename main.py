@@ -1,6 +1,7 @@
 from timing import countdown
-from mayhem import websiteopener
+from mayhem import websiteopener, popupopener
 
 countdown(10)
 websiteopener()
-print("Shocked??")
+popupopener()
+print("End check")
