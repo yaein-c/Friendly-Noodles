@@ -1,0 +1,22 @@
+{%extends "template.html" %}
+{%block title %}Home Page {%endblock%}
+
+{%block content %}
+
+    {% with messages = get_flashed_messages() %}
+        {%if messages%}
+            {% for msg in messages%}
+                <p>{{msg}}</p>
+            {%endfor%}
+        {% endif%}
+    {% endwith%}
+
+
+<form action = "#" method = "post">
+    <h1>Welcome.</h1>
+        <p>Let us know if your butt hurts</p>
+        <p>What is the current status of your butt?</p>
+        <p><input type = "text" name = "nm"></p>
+        <p><input type = "submit" value = "submit"></p>
+</form>
+{%endblock%}
