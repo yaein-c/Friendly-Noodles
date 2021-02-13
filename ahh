@@ -1,0 +1,27 @@
+import tkinter as tkr
+import PIL
+import PIL.ImageTk as ptk
+
+root = tkr.Tk()
+root.geometry("720x420")
+root.title("BUTT HURT, HERE'S HELP")
+root.resizable(False, False)
+
+pic = "heart.jpg"
+pic1 = PIL.Image.open(pic)
+bg = ptk.PhotoImage(pic1)
+
+label1 = tkr.Label( root, image = bg)
+label1.place(x=0,y=0,relwidth=1,relheight=1)
+
+
+label = tkr.Label(root,
+              compound = 'bottom',
+              text = "BUTT HURT, NEED HELP",
+              font = ('Times New Roman', 30, 'bold'),
+              fg = "#560a04",
+              bg = "#da4c48",
+              )
+label.pack()
+
+root.mainloop()
