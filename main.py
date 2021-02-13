@@ -1,7 +1,10 @@
-from timing import countdown
+from timing import countdown, usertimeinput
 from mayhem import websiteopener, popupopener
 
-countdown(10)
+
+countdown(usertimeinput())
+
 websiteopener()
 popupopener()
+
 print("End check")
