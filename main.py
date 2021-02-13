@@ -1,9 +1,6 @@
-# from timing import countdown the old timer
 from timer import submit
 from mayhem import websiteopener, popupopener
-from viewer import usertimeinput, setanothertimer, endofsession
-
-#countdown(usertimeinput()) this is for the timing.py use
+from viewer import setanothertimer, endofsession
 
 #this is to test once
 #submit()
